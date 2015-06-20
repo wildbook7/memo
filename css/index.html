@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>CSS 動作確認</title>
+  <script type="text/javascript">
+    function change() {
+      document.getElementById("text0").disabled = !(document.getElementById("text0").disabled)
+      document.getElementById("text1").disabled = !(document.getElementById("text1").disabled)
+      document.getElementById("text2").disabled = !(document.getElementById("text2").disabled)
+    }
+  </script>
+  <style type="text/css">
+  <!--
+    input:disabled {
+      background-color: white;
+    }
+  -->
+  </style>
+</head>
+<body>
+  <strong>CSS 動作確認</strong><br>
+  <br>
+    ◆text0<br>
+    <input type="text" id="text0" value="テキストボックス"><br>
+    ◆text1<br>
+    <input type="text" id="text1" value="テキストボックス" disabled><br>
+    ◆text2<br>
+    <input type="text" id="text2" value="テキストボックス" disabled style="background-color: pink;"><br>
+    ◆text3<br>
+    <textarea id="text3" value="" disabled>テキストエリア</textarea><br>
+    <br>
+    <input type="button" value="切り替える" onclick="change();"><br>
+    <br>
+    <br>
+    参考 http://wp-e.org/2014/05/20/2420/
+    <br>
+</body>
+</html>
